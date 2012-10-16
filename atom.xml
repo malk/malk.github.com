@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://malk.github.com/atom.xml" rel="self"/>
-  <link href="http://malk.github.com/"/>
-  <updated>2012-10-16T10:52:13+02:00</updated>
-  <id>http://malk.github.com/</id>
+  <title><![CDATA[Malk’Zameth’s braindump]]></title>
+  <link href="http://malk.zameth.org/atom.xml" rel="self"/>
+  <link href="http://malk.zameth.org/"/>
+  <updated>2012-10-16T11:01:39+02:00</updated>
+  <id>http://malk.zameth.org/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Malk’Zameth]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
