@@ -20,9 +20,11 @@ We all know the theory, the cloud mainly is broken into:
 IaaS brings machines, memories, CPU's, systems.
 
 PaaS brings integration:
-* Maybe as system integration (Abstracting away the infrastructure)
-* Maybe as architecture/applicative integration (Bringing Blocks that are not only used but compose the deployed product)
-* Maybe as a development application (selling support to oil your dev process)
+* Usually as system integration (Abstracting away the infrastructure).
+* Maybe as architecture/applicative integration (Bringing Blocks that
+  are not only used but compose the deployed product).
+* Maybe as a development application (selling support to oil-up your
+  dev process).
 
 ### The doubt
 What the several PaaS offers do actually provide is fluctuting.
