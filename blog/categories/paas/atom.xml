@@ -4,7 +4,7 @@
   <title><![CDATA[Category: PaaS | Malk’Zameth’s Braindump]]></title>
   <link href="http://malk.zameth.org/blog/categories/paas/atom.xml" rel="self"/>
   <link href="http://malk.zameth.org/"/>
-  <updated>2012-10-22T13:11:00+02:00</updated>
+  <updated>2012-10-22T13:14:17+02:00</updated>
   <id>http://malk.zameth.org/</id>
   <author>
     <name><![CDATA[Malk’Zameth]]></name>
@@ -38,9 +38,11 @@
 <p>IaaS brings machines, memories, CPU's, systems.</p>
 
 <p>PaaS brings integration:
-* Maybe as system integration (Abstracting away the infrastructure)
-* Maybe as architecture/applicative integration (Bringing Blocks that are not only used but compose the deployed product)
-* Maybe as a development application (selling support to oil your dev process)</p>
+* Usually as system integration (Abstracting away the infrastructure).
+* Maybe as architecture/applicative integration (Bringing Blocks that
+  are not only used but compose the deployed product).
+* Maybe as a development application (selling support to oil-up your
+  dev process).</p>
 
 <h3>The doubt</h3>
 
