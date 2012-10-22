@@ -1,0 +1,1 @@
+rake generate && rake deploy && git add . && git commit -m 'no comment' && git push origin source

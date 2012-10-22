@@ -1,0 +1,37 @@
+digraph G {
+	compound=true;
+	node [shape=box, style="filled"];
+	edge [dir=none];
+	subgraph cluster_tmk_web6 {
+		nginx [label="nginx-frontend TCP 0.0.0.0:80"];
+		
+		subgraph clusteradminapp {
+			unicorn [label="unicorn_rails TCP 127.0.0.1:8080", color="#800020"];
+			subgraph clusterROR {
+				label="ROR v.2.1";
+				brida [label="brida_face_client"];
+			}
+			unicorn -> brida[style=invis];
+			label="Admin App";
+		}
+
+		memcached [label="memcached"];
+		sphinx;
+		mongodb;
+
+		subgraph cluster_errbit {
+			unicorn2;
+			ror3;
+			unicorn2 -> ror3[style="invis"];
+			label="Errbit";
+		}
+
+		label="tmk-web6.service.home";
+	}       
+
+	nginx -> unicorn;
+	nginx -> unicorn2;
+	brida -> memcached [lhead=clusterROR];
+	brida -> sphinx [lhead=clusterROR];
+	ror3 -> mongodb;
+}

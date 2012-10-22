@@ -1,0 +1,138 @@
+// If you need a handy color picker try http://hslpicker.com
+// Or look at octopress/sass/base/solarized.scss for inspiration. The colors in there are excellent.
+// The following are ordered in terms of vague importance.
+
+$burgundy: #800020;
+$yellow: #8C8200;
+$blue: #07325B;
+
+$main-color:  #800020;
+
+
+
+// We use the main color a lot!
+$m: $main-color;
+
+/*
+// These 3 will be used anyway
+
+// On the shadow of the footer letters
+$m-5: lighten($m, 5);
+
+
+
+
+// On the background of the search box (whose text is always grey)
+$m-12: lighten($m, 12);
+
+// on the shadow of the navigation text
+$m-15: lighten($m, 15);
+*/
+
+//Palette
+//$off-white: lighten($m, 84);
+$off-white: lighten($m, 80);
+$white: lighten($off-white, 5);
+$black: darken($m, 25);
+
+$m_24: darken($m, 24);
+$m_23: darken($m, 23);
+$m_22: darken($m, 22);
+$m_21: darken($m, 21);
+$m_20: darken($m, 20);
+$m_19: darken($m, 19);
+$m_18: darken($m, 18);
+$m_17: darken($m, 17);
+$m_16: darken($m, 16);
+$m_15: darken($m, 15);
+$m_14: darken($m, 14);
+$m_13: darken($m, 13);
+$m_12: darken($m, 12);
+$m_11: darken($m, 11);
+$m_10: darken($m, 10);
+$m_9: darken($m, 9);
+$m_8: darken($m, 8);
+$m_7: darken($m, 7);
+$m_6: darken($m, 6);
+$m_5: darken($m, 5);
+$m_4: darken($m, 4);
+
+//Header
+$header-bg: $m;
+$header-border: $m;
+$title-color: $m_23;
+$subtitle-color: $m_16;
+
+
+// Navigation
+$nav-bg: $m_12;
+$nav-bg-front: $m_12;
+$nav-bg-back: $m_12;
+$nav-color: $m;
+$nav-color-hover: $off-white;
+$nav-placeholder: $m;
+$nav-border: $m;
+$nav-border-top: $m;
+$nav-border-bottom: $m;
+$nav-border-left: $m;
+$nav-border-right: $m;
+
+// Main Section Colors
+$main-bg: $m;
+$page-bg: $m;
+$type-border: $m;
+$article-border: $m;
+$text-color: $off-white;
+$text-color-light: $m_16;
+
+//$text-shadow: $m;
+
+// Sidebar colors
+$sidebar-color: $m_22;
+$sidebar-bg: $m;
+$sidebar-border: $m_4;
+$sidebar-border-hover: $m_12;
+$sidebar-link-color-subdued: $m_16;
+
+// Footer
+$footer-bg: $m;
+$footer-bg-front: $m;
+$footer-bg-back: $m;
+$footer-color: $m_12;
+$footer-color-hover: $m;
+$footer-border-top: $m;
+$footer-border-bottom: $m;
+$footer-link-color: $m;
+$page-border-bottom: $m;
+
+//How links appear overall
+$link-color: $m_22;
+$link-color-hover: $off-white;
+$link-color-active: $black;
+$link-color-visited: $m_16;
+
+
+// all links are equal for me here
+$sidebar-link-color-subdued-hover: $m_16;
+$twitter-status-link: $link-color;
+$footer-link-color-hover: $link-color-hover;
+$footer-link-color-visited: $link-color-visited;
+$footer-link-color-active: $link-color-active;
+$sidebar-link-color: $link-color;
+$sidebar-link-color-hover:  $link-color-hover;
+$sidebar-link-color-visited: $link-color-visited;
+$sidebar-link-color-active: $link-color-active;
+$nav-link-color: $link-color;
+$nav-link-color-hover: $link-color-hover;
+$nav-link-color-visited: $link-color-visited;
+$nav-link-color-active: $link-color-active;
+
+
+/*
+to keep around a little
+$sidebar-bg: $m; //desaturate(lighten($sidebar-color, 70), 8);
+$link-color: lighten($m, 20);
+$link-color-hover: lighten($m, 30);
+$link-color-visited: desaturate($m, 10);
+$link-color-active: lighten($m, 15);
+*/

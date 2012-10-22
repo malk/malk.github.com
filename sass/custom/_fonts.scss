@@ -1,0 +1,11 @@
+// Here you can easily change font faces which are used in your site.
+// To give it a try, uncomment some of the lines below rebuild your blog, and see how it works. your sites's.
+// If you love to use Web Fonts, you also need to add some lines to source/_includes/custom/head.html
+
+$sans:  "Molengo", sans-serif;
+$serif: "Vollkorn", serif;
+$mono: "Dina", "Anonymous" monospace;
+$cursive: "Aquiline", "AquilineTwo", "Zapfino", cursive;
+$heading-font-family: $cursive;
+$header-title-font-family:  $cursive;
+$header-subtitle-font-family: $cursive;
