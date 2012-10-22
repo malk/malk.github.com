@@ -7,10 +7,10 @@ categories: PaaS
 ---
 ## What is a Minimum Viable PaaS?
 
-### Tl;Dr
-I try to find a what point an IaaS becomes a SaaS.
+### In one tweet
+A what point an IaaS becomes a PaaS? When you forget there is an IaaS at all.
 
-### The Basis 
+### Basis 
 We all know the theory, the cloud mainly is broken into:
 
 * IaaS - Infrastructure as a Service (Amazon, OpenStack, etc.)
@@ -27,7 +27,7 @@ PaaS brings integration:
 * Maybe as a development application (selling support to oil-up your
   dev process).
 
-### The doubt
+### Doubts
 What the several PaaS offers do actually provide is fluctuting.
 
 The IaaS providers themselves do offer some level of integration (some enter deeply into PaaS-land without really becoming one).
@@ -36,20 +36,20 @@ So: What is the minimal set of features that make a PaaS a PasS?
 
 What is the minimum viable PaaS?
 
-### My Jab at a feature set
-My minimum would be:
+### My jab at an answer
+My minimum feature set would be:
 
-#### IaaS Brokerage
+#### IaaS brokerage
 If the PaaS is not an IaaS it should have a way to communicate with one! Which is a given: Nothing revolutionary.
 
-#### A PaaS Supervision/IaaS Abstraction
+#### IaaS abstraction
 The PaaS user do not want to control how much CPU it needs, neither how much memory nor what OS does his virtual machine uses nor that it uses virtual machines at all.
 
 He wants to deploy a product to the platform and have it "magically" handle those details.
 
 Or failing that at least take sensible defaults for everything and mostly "just work".
 
-#### Product Installation
+#### Product installation
 A corollary of *IaaS Abstraction* is that the end-user does not deploy a virtual machine, but his product only. His deploying interface is product oriented.
 
 #### Product finding
@@ -60,7 +60,7 @@ Regardless of the PaaS' own Supervision the user should be able to manually ask 
 
 IaaS should do that too, but PaaS should hide the "how": the user should ask for more horsepower, without worrying what that horsepower is (machines, memory etc.)
 
-#### Load Balancing as a Service
+#### Load balancing as a Service
 At some point scaling will mean having a product turn on several machines, the PaaS should load balance betwen those.
 
 #### Monitoring
