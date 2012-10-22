@@ -4,7 +4,7 @@
   <title><![CDATA[Malk’Zameth’s Braindump]]></title>
   <link href="http://malk.zameth.org/atom.xml" rel="self"/>
   <link href="http://malk.zameth.org/"/>
-  <updated>2012-10-22T13:09:29+02:00</updated>
+  <updated>2012-10-22T13:11:00+02:00</updated>
   <id>http://malk.zameth.org/</id>
   <author>
     <name><![CDATA[Malk’Zameth]]></name>
@@ -20,7 +20,7 @@
     <id>http://malk.zameth.org/blog/2012/10/22/minimum-viable-paas</id>
     <content type="html"><![CDATA[<h2>What is a Minimum Viable PaaS?</h2>
 
-<h3>TL;DR</h3>
+<h3>Tl;Dr</h3>
 
 <p>I try to find a what point an IaaS becomes a SaaS.</p>
 
