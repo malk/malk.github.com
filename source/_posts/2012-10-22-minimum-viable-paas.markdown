@@ -7,7 +7,7 @@ categories: PaaS
 ---
 ## What is a Minimum Viable PaaS?
 
-### TL;DR
+### Tl;Dr
 I try to find a what point an IaaS becomes a SaaS.
 
 ### The Basis 
