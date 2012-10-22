@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Malk’Zameth’s Braindump]]></title>
-  <link href="http://malk.zameth.org/atom.xml" rel="self"/>
+  <title><![CDATA[Category: PaaS | Malk’Zameth’s Braindump]]></title>
+  <link href="http://malk.zameth.org/blog/categories/paas/atom.xml" rel="self"/>
   <link href="http://malk.zameth.org/"/>
   <updated>2012-10-22T13:09:29+02:00</updated>
   <id>http://malk.zameth.org/</id>
@@ -35,7 +35,7 @@
 </ul>
 
 
-<p>IaaS brings machines, memories, CPU&#8217;s, systems.</p>
+<p>IaaS brings machines, memories, CPU's, systems.</p>
 
 <p>PaaS brings integration:
 * Maybe as system integration (Abstracting away the infrastructure)
@@ -64,9 +64,9 @@
 
 <p>The PaaS user do not want to control how much CPU it needs, neither how much memory nor what OS does his virtual machine uses nor that it uses virtual machines at all.</p>
 
-<p>He wants to deploy a product to the platform and have it &#8220;magically&#8221; handle those details.</p>
+<p>He wants to deploy a product to the platform and have it "magically" handle those details.</p>
 
-<p>Or failing that at least take sensible defaults for everything and mostly &#8220;just work&#8221;.</p>
+<p>Or failing that at least take sensible defaults for everything and mostly "just work".</p>
 
 <h4>Product Installation</h4>
 
@@ -78,9 +78,9 @@
 
 <h4>Simple scalability as a Service</h4>
 
-<p>Regardless of the PaaS&#8217; own Supervision the user should be able to manually ask for more resources should a sudden need of scalability arise.</p>
+<p>Regardless of the PaaS' own Supervision the user should be able to manually ask for more resources should a sudden need of scalability arise.</p>
 
-<p>IaaS should do that too, but PaaS should hide the &#8220;how&#8221;: the user should ask for more horsepower, without worrying what that horsepower is (machines, memory etc.)</p>
+<p>IaaS should do that too, but PaaS should hide the "how": the user should ask for more horsepower, without worrying what that horsepower is (machines, memory etc.)</p>
 
 <h4>Load Balancing as a Service</h4>
 
@@ -101,17 +101,6 @@
 <h3>What would be your answer?</h3>
 
 <p>Candid feedback welcome.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[About]]></title>
-    <link href="http://malk.zameth.org/blog/2012/10/16/about/"/>
-    <updated>2012-10-16T00:00:00+02:00</updated>
-    <id>http://malk.zameth.org/blog/2012/10/16/about</id>
-    <content type="html"><![CDATA[<h2>Malk’Zameth’s Braindump</h2>
-
-<p>Random serialisations of things in my brain: Grown for my usage. Maybe gibberish to you! <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB">Feel free to use it</a>. Comments welcome•</p>
 ]]></content>
   </entry>
   
