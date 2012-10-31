@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Malk’Zameth’s Braindump</title>
+  <title>What does it means for a Datastore to be elastic? - Malk’Zameth’s Braindump</title>
   <meta name="author" content="Malk’Zameth">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://malk.zameth.org/">
+  <link rel="canonical" href="http://malk.zameth.org/blog/2012/10/31/what-does-it-means-for-a-datastore-to-be-elastic/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -60,15 +60,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/10/31/what-does-it-means-for-a-datastore-to-be-elastic/">What Does It Means for a Datastore to Be Elastic?</a></h1>
+      <h1 class="entry-title">What Does It Means for a Datastore to Be Elastic?</h1>
     
     
       <p class="meta">
@@ -91,7 +88,7 @@
   </header>
 
 
-  <div class="entry-content"><h2>What does it means for a Datastore to be <em>elastic</em>?</h2>
+<div class="entry-content"><h2>What does it means for a Datastore to be <em>elastic</em>?</h2>
 
 <h3>In 140 Characters or less</h3>
 
@@ -192,146 +189,16 @@ Every rubber band has a point where it breaks.</p>
 <p>You should seek the <em>Yield strength</em> of your datastore system under
 your production architecture.</p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/10/22/minimum-viable-paas/">Minimum Viable PaaS?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">Malk’Zameth</span></span>
 
-<time datetime="2012-10-22T12:05:00+02:00" pubdate data-updated="true">Oct 22<span>nd</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>What is a Minimum Viable PaaS?</h2>
-
-<h3>In one tweet</h3>
-
-<p>A what point an IaaS becomes a PaaS? When you forget there is an IaaS at all.</p>
-
-<h3>Basis</h3>
-
-<p>We all know the theory, the cloud mainly is broken into:</p>
-
-<ul>
-<li>IaaS - Infrastructure as a Service (Amazon, OpenStack, etc.)</li>
-<li>PaaS - Platform as a Service (Heroku, Cloudbees, etc.)</li>
-<li>SaaS - Software as a Service (Salesforce, Office 365, etc.)</li>
-</ul>
-
-
-<p>IaaS brings machines, memories, CPU&#8217;s, systems.</p>
-
-<p>PaaS brings integration:</p>
-
-<ul>
-<li>Usually as system integration (Abstracting away the infrastructure).</li>
-<li>Maybe as architecture/applicative integration (Bringing Blocks that
-are not only used but compose the deployed product).</li>
-<li>Maybe as a development application (selling support to oil-up your
-dev process).</li>
-</ul>
-
-
-<h3>Doubts</h3>
-
-<p>What the several PaaS offers do actually provide is fluctuting.</p>
-
-<p>The IaaS providers themselves do offer some level of integration (some enter deeply into PaaS-land without really becoming one).</p>
-
-<p>So: What is the minimal set of features that make a PaaS a PasS?</p>
-
-<p>What is the minimum viable PaaS?</p>
-
-<h3>My jab at an answer</h3>
-
-<p>My minimum feature set would be:</p>
-
-<h4>IaaS brokerage</h4>
-
-<p>If the PaaS is not an IaaS it should have a way to communicate with one! Which is a given: Nothing revolutionary.</p>
-
-<h4>IaaS abstraction</h4>
-
-<p>The PaaS user do not want to control how much CPU it needs, neither how much memory nor what OS does his virtual machine uses nor that it uses virtual machines at all.</p>
-
-<p>He wants to deploy a product to the platform and have it &#8220;magically&#8221; handle those details.</p>
-
-<p>Or failing that at least take sensible defaults for everything and mostly &#8220;just work&#8221;.</p>
-
-<h4>Product installation</h4>
-
-<p>A corollary of <em>IaaS Abstraction</em> is that the end-user does not deploy a virtual machine, but his product only. His deploying interface is product oriented.</p>
-
-<h4>Product finding</h4>
-
-<p>At least internally, if the unit of a PaaS is a product, it should be able to find where its products are.</p>
-
-<h4>Simple scalability as a Service</h4>
-
-<p>Regardless of the PaaS&#8217; own Supervision the user should be able to manually ask for more resources should a sudden need of scalability arise.</p>
-
-<p>IaaS should do that too, but PaaS should hide the &#8220;how&#8221;: the user should ask for more horsepower, without worrying what that horsepower is (machines, memory etc.)</p>
-
-<h4>Load balancing as a Service</h4>
-
-<p>At some point scaling will mean having a product turn on several machines, the PaaS should load balance betwen those.</p>
-
-<h4>Monitoring</h4>
-
-<p>Not something highly developed (like loggly) but at least a way to know your product is down.</p>
-
-<h4>Configuration management</h4>
-
-<p>Not as an external service, but the brunt work of a PaaS is giving a working system completely configured.</p>
-
-<p>That configuration will evolve, in all deployed systems.</p>
-
-<p>The PaaS will need high amounts of configuration management (using tools like puppet or chef probably)</p>
-
-<h3>What would be your answer?</h3>
-
-<p>Candid feedback welcome.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/10/16/about/">About</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -343,29 +210,44 @@ dev process).</li>
   
 
 
-<time datetime="2012-10-16T00:00:00+02:00" pubdate data-updated="true">Oct 16<span>th</span>, 2012</time>
-        
-      </p>
+<time datetime="2012-10-31T13:57:00+01:00" pubdate data-updated="true">Oct 31<span>st</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/bigdata/'>BigData</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><h2>Malk’Zameth’s Braindump</h2>
-
-<p>Random serialisations of things in my brain: Grown for my usage. Maybe gibberish to you! <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB">Feel free to use it</a>. Comments welcome•</p>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://malk.zameth.org/blog/2012/10/31/what-does-it-means-for-a-datastore-to-be-elastic/" data-via="malk_zameth" data-counturl="http://malk.zameth.org/blog/2012/10/31/what-does-it-means-for-a-datastore-to-be-elastic/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/10/22/minimum-viable-paas/" title="Previous Post: Minimum Viable PaaS?">&laquo; Minimum Viable PaaS?</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
+  </section>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -391,7 +273,7 @@ dev process).</li>
 <section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
@@ -411,6 +293,7 @@ dev process).</li>
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -425,7 +308,10 @@ dev process).</li>
       var disqus_shortname = 'malkzamethsbraindump';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://malk.zameth.org/blog/2012/10/31/what-does-it-means-for-a-datastore-to-be-elastic/';
+        var disqus_url = 'http://malk.zameth.org/blog/2012/10/31/what-does-it-means-for-a-datastore-to-be-elastic/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
