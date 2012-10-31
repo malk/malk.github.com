@@ -58,10 +58,10 @@ $m_5: darken($m, 5);
 $m_4: darken($m, 4);
 
 //Header
-$header-bg: $m;
-$header-border: $m;
-$title-color: $m_23;
-$subtitle-color: $m_16;
+$header-bg: $off-white;
+$header-border: $off-white;
+$title-color: $m;
+$subtitle-color: $m;
 
 
 // Navigation
@@ -78,11 +78,11 @@ $nav-border-left: $m;
 $nav-border-right: $m;
 
 // Main Section Colors
-$main-bg: $m;
-$page-bg: $m;
-$type-border: $m;
-$article-border: $m;
-$text-color: $off-white;
+$main-bg: $off-white;
+$page-bg: $off-white;
+$type-border: $off-white;
+$article-border: $off-white;
+$text-color: $m;
 $text-color-light: $m_16;
 
 //$text-shadow: $m;
@@ -90,24 +90,24 @@ $text-color-light: $m_16;
 // Sidebar colors
 $sidebar-color: $m_22;
 $sidebar-bg: $m;
-$sidebar-border: $m_4;
+$sidebar-border: $off-white;
 $sidebar-border-hover: $m_12;
-$sidebar-link-color-subdued: $m_16;
+$sidebar-link-color-subdued: $off-white;
 
 // Footer
-$footer-bg: $m;
-$footer-bg-front: $m;
-$footer-bg-back: $m;
+$footer-bg: $off-white;
+$footer-bg-front: $off-white;
+$footer-bg-back: $off-white;
 $footer-color: $m_12;
 $footer-color-hover: $m;
-$footer-border-top: $m;
-$footer-border-bottom: $m;
+$footer-border-top: $off-white;
+$footer-border-bottom: $off-white;
 $footer-link-color: $m;
 $page-border-bottom: $m;
 
 //How links appear overall
 $link-color: $m_22;
-$link-color-hover: $off-white;
+$link-color-hover: $m;
 $link-color-active: $black;
 $link-color-visited: $m_16;
 
