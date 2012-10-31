@@ -4,7 +4,7 @@
   <title><![CDATA[Malk’Zameth’s Braindump]]></title>
   <link href="http://malk.zameth.org/atom.xml" rel="self"/>
   <link href="http://malk.zameth.org/"/>
-  <updated>2012-10-31T15:27:54+01:00</updated>
+  <updated>2012-10-31T15:37:43+01:00</updated>
   <id>http://malk.zameth.org/</id>
   <author>
     <name><![CDATA[Malk’Zameth]]></name>
@@ -18,7 +18,7 @@
     <link href="http://malk.zameth.org/blog/2012/10/31/what-is-an-elastic-datastore/"/>
     <updated>2012-10-31T13:57:00+01:00</updated>
     <id>http://malk.zameth.org/blog/2012/10/31/what-is-an-elastic-datastore</id>
-    <content type="html"><![CDATA[<h2>In 140 Characters or less</h2>
+    <content type="html"><![CDATA[<h2>In one phrase</h2>
 
 <p>Elastic datastores handle <em>stress</em> losing neither <em>consistency</em> nor <em>availability</em>.</p>
 
@@ -92,7 +92,7 @@ scaling up is not enough.</p>
 <p>Here our datastore would be elastic if it could handle the changes of
 schema on the data and always use its own schema in the end (avoiding deformation).</p>
 
-<p>This is possible in datastores that are effectively schema-less (like mongo)</p>
+<p>This is possible in datastores that are effectively schema-less (like mongo).</p>
 
 <h4><em>Adapting to</em> schema changes</h4>
 
@@ -114,112 +114,6 @@ relationships that are unknown initially.</p>
 <em>stress</em> is just too much and the <em>elastic</em> loses all <em>elasticity</em>.</p>
 
 <p>Every rubber band has a point where it breaks.</p>
-
-<p>You should seek the <em>Yield strength</em> of your datastore system under
-your production architecture•</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[What does it means for a Datastore to be elastic?]]></title>
-    <link href="http://malk.zameth.org/blog/2012/10/31/what-does-it-means-for-a-datastore-to-be-elastic/"/>
-    <updated>2012-10-31T13:57:00+01:00</updated>
-    <id>http://malk.zameth.org/blog/2012/10/31/what-does-it-means-for-a-datastore-to-be-elastic</id>
-    <content type="html"><![CDATA[<h2>In 140 Characters or less</h2>
-
-<p>Elastic datastores handle <em>stress</em> losing neither <em>consistency</em> nor <em>availability</em>.</p>
-
-<h2>In detail</h2>
-
-<p>To understand that one need to understand what is <em>Elasticity</em> exactly!</p>
-
-<h3>So, What is <em>elasticity</em> ?</h3>
-
-<p>We have two kinds of elasticity</p>
-
-<h4>General Elasticity</h4>
-
-<p>« Ability of <em>something</em> to receive a <em>stress</em> without deforming. »</p>
-
-<p>Think about a rubber band: you can take it with your hands, stretch it
-and abandon it : the band will return to its original shape.</p>
-
-<p>Commonly used in physics.</p>
-
-<h4>Point elasticity</h4>
-
-<p>« <em>rate</em> of how much <em>something</em> follows another. »</p>
-
-<p>Think about two objects, attached to each other by a rubber band :
-when one of them moves, the other follows. Not immediately, not in the
-same speed (because in the beginning the rubber band will stretch
-instead of pull) but follows anyway.</p>
-
-<p>Commonly used in mathematics.</p>
-
-<h3>What is an <em>Elastic</em> ?</h3>
-
-<p><em>Something</em> with a <em>high</em> elasticity.</p>
-
-<h3>So, when is a datastore elastic?</h3>
-
-<p>When it shows, in any form, a high degree of <em>elasticity</em>. Here are some common examples:</p>
-
-<h4>Scaling up and down</h4>
-
-<p>If we consider the <em>General elasticity</em> :</p>
-
-<p>« Ability of <em>something</em> to receive a <em>stress</em> without deforming. »</p>
-
-<p>Our <em>something</em> is the datastore, its <em>stress</em> is the force of a high
-number of concurrent users (say: your blog got featured highly on
-reddit).</p>
-
-<p>The datastore would be elastic if it <em>both</em>:</p>
-
-<ol>
-<li>Scaled up during the stress of that spike in number of visits (say:
-used more nodes in the cluster).</li>
-<li>Scaled down after the spike back to its original form (say:
-returned by himself to its original number of nodes)</li>
-</ol>
-
-
-<p>Not scaling at all would of course not qualify as elastic, but only
-scaling up is not enough.</p>
-
-<h4><em>Accepting</em> schema changes</h4>
-
-<p>Again we consider the <em>General elasticity</em> :</p>
-
-<p>« Ability of <em>something</em> to receive a <em>stress</em> without deforming.</p>
-
-<p>Our <em>something</em> : the datastore. Its stress : The data schema changes a lot.</p>
-
-<p>Here our datastore would be elastic if it could handle the changes of
-schema on the data and always use its own schema in the end.</p>
-
-<p>This is possible in datastores that are effectively schema-less (like mongo)</p>
-
-<h4><em>Adapting to</em> schema changes</h4>
-
-<p>Let’s revisit the same “the data schema changes a lot” problem, but
-this time we use <em>point elasticity</em>:</p>
-
-<p>« <em>rate</em> of how much <em>something</em> follows <em>another</em>. »</p>
-
-<p>The datastore would be elastic if it would be able to take the new
-data schema into consideration and (after some time) evolve its own
-schema to handle the difference.</p>
-
-<p>This is the approach used by Graph databases to handle the emergence of
-relationships that are unknown initially.</p>
-
-<h2>Remember</h2>
-
-<p>Every Elastic has its <em>Yield strength</em> : the point of wich, the
-<em>stress</em> is just too much and the <em>elastic</em> loses all <em>elasticity</em>.
-Every rubber band has a point where it breaks.</p>
 
 <p>You should seek the <em>Yield strength</em> of your datastore system under
 your production architecture•</p>
