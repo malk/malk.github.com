@@ -21,7 +21,7 @@ We have two kinds of elasticity
 
 ##### General Elasticity
 
-> Ability of *something* to receive a *stress* without deforming.
+	Ability of *something* to receive a *stress* without deforming.
 
 Think about a rubber band: you can take it with your hands, stretch it
 and abandon it : the band will return to its original shape.
@@ -30,7 +30,7 @@ Commonly used in physics.
 
 ##### Point elasticity
 
-> *rate* of how much *something* follows another.
+	*rate* of how much *something* follows another.
 
 Think about two objects, attached to each other by a rubber band :
 when one of them moves, the other follows. Not immediately, not in the
@@ -51,7 +51,7 @@ When it shows, in any form, a high degree of *elasticity*. Here are some common 
 
 If we consider the *General elasticity* :
 
-> The ability of *something* to receive a *stress* without deforming.
+	Ability of *something* to receive a *stress* without deforming.
 
 Our *something* is the datastore, its *stress* is the force of a high
 number of concurrent users (say: your blog got featured highly on
@@ -71,7 +71,7 @@ scaling up is not enough.
 
 Again we consider the *General elasticity* :
 
-> The ability of *something* to receive a *stress* without deforming.
+	Ability of *something* to receive a *stress* without deforming.
 
 Our *something* : the datastore. Its stress : The data schema changes a lot.
 
@@ -82,10 +82,10 @@ This is possible in datastores that are effectively schema-less (like mongo)
 
 ##### *Adapting to* schema changes
 
-Let's revisit the same "the data schema changes a lot" problem, but
+Let’s revisit the same “the data schema changes a lot” problem, but
 this time we use *point elasticity*:
 
-> *rate* of how much *something* follows another.
+	*rate* of how much *something* follows *another*.
 
 The datastore would be elastic if it would be able to take the new
 data schema into consideration and (after some time) evolve its own
@@ -101,4 +101,4 @@ Every Elastic has its *Yield strength* : the point of wich, the
 Every rubber band has a point where it breaks.
 
 You should seek the *Yield strength* of your datastore system under
-your production architecture.
+your production architecture•
