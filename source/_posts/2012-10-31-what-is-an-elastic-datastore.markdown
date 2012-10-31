@@ -6,7 +6,7 @@ comments: true
 categories: BigData 
 ---
 
-## In 140 Characters or less
+## In one phrase
 Elastic datastores handle *stress* losing neither *consistency* nor *availability*. 
 
 ## In detail
@@ -75,7 +75,7 @@ Our *something* : the datastore. Its stress : The data schema changes a lot.
 Here our datastore would be elastic if it could handle the changes of
 schema on the data and always use its own schema in the end (avoiding deformation).
 
-This is possible in datastores that are effectively schema-less (like mongo)
+This is possible in datastores that are effectively schema-less (like mongo).
 
 #### *Adapting to* schema changes
 
