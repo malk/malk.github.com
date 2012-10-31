@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>What does it means for a Datastore to be elastic? - Malk’Zameth’s Braindump</title>
+  <title>What is an elastic datastore? - Malk’Zameth’s Braindump</title>
   <meta name="author" content="Malk’Zameth">
 
   
-  <meta name="description" content="In 140 Characters or less Elastic datastores handle stress losing neither consistency nor availability. In detail To understand that one need to &hellip;">
+  <meta name="description" content="In 140 Characters or less Elastic datastores handle stress losing neither consistency nor availability. In detail To understand that you need to know &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://malk.zameth.org/blog/2012/10/31/what-does-it-means-for-a-datastore-to-be-elastic/">
+  <link rel="canonical" href="http://malk.zameth.org/blog/2012/10/31/what-is-an-elastic-datastore/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -65,7 +65,7 @@
   
   <header>
     
-      <h1 class="entry-title">What Does It Means for a Datastore to Be Elastic?</h1>
+      <h1 class="entry-title">What Is an Elastic Datastore?</h1>
     
     
       <p class="meta">
@@ -94,18 +94,18 @@
 
 <h2>In detail</h2>
 
-<p>To understand that one need to understand what is <em>Elasticity</em> exactly!</p>
+<p>To understand that you need to know what is <em>Elasticity</em> exactly!</p>
 
 <h3>So, What is <em>elasticity</em> ?</h3>
 
-<p>We have two kinds of elasticity</p>
+<p>We have two kinds :</p>
 
 <h4>General Elasticity</h4>
 
 <p>« Ability of <em>something</em> to receive a <em>stress</em> without deforming. »</p>
 
 <p>Think about a rubber band: you can take it with your hands, stretch it
-and abandon it : the band will return to its original shape.</p>
+and abandon it: the band will return to its original shape.</p>
 
 <p>Commonly used in physics.</p>
 
@@ -113,7 +113,7 @@ and abandon it : the band will return to its original shape.</p>
 
 <p>« <em>rate</em> of how much <em>something</em> follows another. »</p>
 
-<p>Think about two objects, attached to each other by a rubber band :
+<p>Think about two objects, attach each other by a rubber band:
 when one of them moves, the other follows. Not immediately, not in the
 same speed (because in the beginning the rubber band will stretch
 instead of pull) but follows anyway.</p>
@@ -126,7 +126,7 @@ instead of pull) but follows anyway.</p>
 
 <h3>So, when is a datastore elastic?</h3>
 
-<p>When it shows, in any form, a high degree of <em>elasticity</em>. Here are some common examples:</p>
+<p>When it shows, in any form, a high degree of <em>elasticity</em>. Some common examples:</p>
 
 <h4>Scaling up and down</h4>
 
@@ -134,7 +134,7 @@ instead of pull) but follows anyway.</p>
 
 <p>« Ability of <em>something</em> to receive a <em>stress</em> without deforming. »</p>
 
-<p>Our <em>something</em> is the datastore, its <em>stress</em> is the force of a high
+<p>Our <em>something</em>: the datastore. Its <em>stress</em>: the force of a high
 number of concurrent users (say: your blog got featured highly on
 reddit).</p>
 
@@ -155,12 +155,12 @@ scaling up is not enough.</p>
 
 <p>Again we consider the <em>General elasticity</em> :</p>
 
-<p>« Ability of <em>something</em> to receive a <em>stress</em> without deforming.</p>
+<p>« Ability of <em>something</em> to receive a <em>stress</em> without deforming. »</p>
 
 <p>Our <em>something</em> : the datastore. Its stress : The data schema changes a lot.</p>
 
 <p>Here our datastore would be elastic if it could handle the changes of
-schema on the data and always use its own schema in the end.</p>
+schema on the data and always use its own schema in the end (avoiding deformation).</p>
 
 <p>This is possible in datastores that are effectively schema-less (like mongo)</p>
 
@@ -181,8 +181,9 @@ relationships that are unknown initially.</p>
 <h2>Remember</h2>
 
 <p>Every Elastic has its <em>Yield strength</em> : the point of wich, the
-<em>stress</em> is just too much and the <em>elastic</em> loses all <em>elasticity</em>.
-Every rubber band has a point where it breaks.</p>
+<em>stress</em> is just too much and the <em>elastic</em> loses all <em>elasticity</em>.</p>
+
+<p>Every rubber band has a point where it breaks.</p>
 
 <p>You should seek the <em>Yield strength</em> of your datastore system under
 your production architecture•</p>
@@ -222,7 +223,7 @@ your production architecture•</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://malk.zameth.org/blog/2012/10/31/what-does-it-means-for-a-datastore-to-be-elastic/" data-via="malk_zameth" data-counturl="http://malk.zameth.org/blog/2012/10/31/what-does-it-means-for-a-datastore-to-be-elastic/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://malk.zameth.org/blog/2012/10/31/what-is-an-elastic-datastore/" data-via="malk_zameth" data-counturl="http://malk.zameth.org/blog/2012/10/31/what-is-an-elastic-datastore/" >Tweet</a>
   
   
   
@@ -231,10 +232,8 @@ your production architecture•</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2012/10/22/minimum-viable-paas/" title="Previous Post: Minimum Viable PaaS?">&laquo; Minimum Viable PaaS?</a>
+        <a class="basic-alignment left" href="/blog/2012/10/31/what-does-it-means-for-a-datastore-to-be-elastic/" title="Previous Post: What does it means for a Datastore to be elastic?">&laquo; What does it means for a Datastore to be elastic?</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2012/10/31/what-is-an-elastic-datastore/" title="Next Post: What is an elastic datastore?">What is an elastic datastore? &raquo;</a>
       
     </p>
   </footer>
@@ -313,8 +312,8 @@ your production architecture•</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://malk.zameth.org/blog/2012/10/31/what-does-it-means-for-a-datastore-to-be-elastic/';
-        var disqus_url = 'http://malk.zameth.org/blog/2012/10/31/what-does-it-means-for-a-datastore-to-be-elastic/';
+        var disqus_identifier = 'http://malk.zameth.org/blog/2012/10/31/what-is-an-elastic-datastore/';
+        var disqus_url = 'http://malk.zameth.org/blog/2012/10/31/what-is-an-elastic-datastore/';
         var disqus_script = 'embed.js';
       
     (function () {
