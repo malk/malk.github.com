@@ -13,7 +13,7 @@ Elastic datastores handle *stress* losing neither *consistency* nor *availabilit
 To understand that you need to know what is *Elasticity* exactly!
 
 ### So, What is *elasticity* ?
-
+<!-- more -->
 We have two kinds :
 
 #### General Elasticity

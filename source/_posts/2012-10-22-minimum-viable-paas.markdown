@@ -7,7 +7,7 @@ categories: PaaS
 ---
 ## What is a Minimum Viable PaaS?
 
-### In one tweet
+### In one phrase
 A what point an IaaS becomes a PaaS? When you forget there is an IaaS at all.
 
 ### Basis 
@@ -20,7 +20,7 @@ We all know the theory, the cloud mainly is broken into:
 IaaS brings machines, memories, CPU's, systems.
 
 PaaS brings integration:
-
+<!-- more -->
 * Usually as system integration (Abstracting away the infrastructure).
 * Maybe as architecture/applicative integration (Bringing Blocks that
   are not only used but compose the deployed product).

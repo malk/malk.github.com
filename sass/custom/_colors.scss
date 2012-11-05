@@ -6,12 +6,13 @@ $burgundy: #800020;
 $yellow: #8C8200;
 $blue: #07325B;
 
-$main-color:  #800020;
-
+$main-color: $blue;
+$contrast-color: $burgundy;
 
 
 // We use the main color a lot!
 $m: $main-color;
+$c: $contrast-color;
 
 /*
 // These 3 will be used anyway
@@ -32,50 +33,30 @@ $m-15: lighten($m, 15);
 //Palette
 //$off-white: lighten($m, 84);
 $off-white: lighten($m, 80);
-$white: lighten($off-white, 5);
 $black: darken($m, 25);
-
-$m_24: darken($m, 24);
-$m_23: darken($m, 23);
-$m_22: darken($m, 22);
-$m_21: darken($m, 21);
-$m_20: darken($m, 20);
-$m_19: darken($m, 19);
-$m_18: darken($m, 18);
-$m_17: darken($m, 17);
-$m_16: darken($m, 16);
-$m_15: darken($m, 15);
-$m_14: darken($m, 14);
-$m_13: darken($m, 13);
-$m_12: darken($m, 12);
-$m_11: darken($m, 11);
-$m_10: darken($m, 10);
-$m_9: darken($m, 9);
-$m_8: darken($m, 8);
-$m_7: darken($m, 7);
-$m_6: darken($m, 6);
-$m_5: darken($m, 5);
-$m_4: darken($m, 4);
+$light: desaturate(lighten($m, 16), 10);
+$subdued: desaturate(lighten($m, 24), 10);
 
 //Header
 $header-bg: $off-white;
 $header-border: $off-white;
-$title-color: $m;
-$subtitle-color: $m;
+$title-color: $c;
+$subtitle-color: $c;
 
 
 // Navigation
-$nav-bg: $m_12;
-$nav-bg-front: $m_12;
-$nav-bg-back: $m_12;
-$nav-color: $off-white;
-$nav-color-hover: $off-white;
-$nav-placeholder: $m;
-$nav-border: $m;
-$nav-border-top: $m;
-$nav-border-bottom: $m;
-$nav-border-left: $m;
-$nav-border-right: $m;
+$nav-bg: $off-white;
+$nav-bg-front: $off-white;
+$nav-bg-back: $off-white;
+$nav-color: $subdued;
+$nav-color-hover: $m;
+$nav-placeholder: $subdued;
+$nav-border: $off-white;
+$nav-border-top: $off-white;
+$nav-border-bottom: $off-white;
+$nav-border-left: $off-white;
+$nav-border-right: $off-white;
+
 
 // Main Section Colors
 $main-bg: $off-white;
@@ -83,37 +64,37 @@ $page-bg: $off-white;
 $type-border: $off-white;
 $article-border: $off-white;
 $text-color: $m;
-$text-color-light: $m_16;
+$text-color-light: $light;
 
 //$text-shadow: $m;
 
 // Sidebar colors
-$sidebar-color: $m_22;
+$sidebar-color: $light;
 $sidebar-bg: $off-white;
 $sidebar-border: $off-white;
-$sidebar-border-hover: $m_12;
-$sidebar-link-color-subdued: $off-white;
+$sidebar-border-hover: $subdued;
+$sidebar-link-color-subdued: $subdued;
 
 // Footer
 $footer-bg: $off-white;
 $footer-bg-front: $off-white;
 $footer-bg-back: $off-white;
-$footer-color: $m_12;
+$footer-color: $light;
 $footer-color-hover: $m;
 $footer-border-top: $off-white;
 $footer-border-bottom: $off-white;
 $footer-link-color: $m;
-$page-border-bottom: $m;
+$page-border-bottom: $off-white;
 
 //How links appear overall
-$link-color: $m_22;
+$link-color: $light;
 $link-color-hover: $m;
 $link-color-active: $black;
-$link-color-visited: $m_16;
+$link-color-visited: $subdued;
 
 
 // all links are equal for me here
-$sidebar-link-color-subdued-hover: $m_16;
+$sidebar-link-color-subdued-hover: $subdued;
 $twitter-status-link: $link-color;
 $footer-link-color-hover: $link-color-hover;
 $footer-link-color-visited: $link-color-visited;
