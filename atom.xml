@@ -4,7 +4,7 @@
   <title><![CDATA[Malk’Zameth’s Braindump]]></title>
   <link href="http://malk.zameth.org/atom.xml" rel="self"/>
   <link href="http://malk.zameth.org/"/>
-  <updated>2012-10-31T15:37:43+01:00</updated>
+  <updated>2012-11-05T18:14:51+01:00</updated>
   <id>http://malk.zameth.org/</id>
   <author>
     <name><![CDATA[Malk’Zameth]]></name>
@@ -27,6 +27,9 @@
 <p>To understand that you need to know what is <em>Elasticity</em> exactly!</p>
 
 <h3>So, What is <em>elasticity</em> ?</h3>
+
+<!-- more -->
+
 
 <p>We have two kinds :</p>
 
@@ -127,7 +130,7 @@ your production architecture•</p>
     <id>http://malk.zameth.org/blog/2012/10/22/minimum-viable-paas</id>
     <content type="html"><![CDATA[<h2>What is a Minimum Viable PaaS?</h2>
 
-<h3>In one tweet</h3>
+<h3>In one phrase</h3>
 
 <p>A what point an IaaS becomes a PaaS? When you forget there is an IaaS at all.</p>
 
@@ -145,6 +148,9 @@ your production architecture•</p>
 <p>IaaS brings machines, memories, CPU&#8217;s, systems.</p>
 
 <p>PaaS brings integration:</p>
+
+<!-- more -->
+
 
 <ul>
 <li>Usually as system integration (Abstracting away the infrastructure).</li>
